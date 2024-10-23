@@ -1,7 +1,7 @@
 package clases.ejercicio4;
 
 public class Coche {
-    
+
     // PRIMERO
     private String matricula;
     private String marca;
@@ -26,9 +26,9 @@ public class Coche {
 
     }
 
-    //CUARTO
-    public boolean arrancar(){
-        if (this.velocidadActual==0 && !this.arrancado) { // !this.arrancado = this.arrancado == false.
+    // CUARTO
+    public boolean arrancar() {
+        if (this.velocidadActual == 0 && !this.arrancado) { // !this.arrancado = this.arrancado == false.
             this.arrancado = true;
             return true;
 
@@ -38,35 +38,35 @@ public class Coche {
 
     }
 
-    public boolean parar(){
-        if (this.velocidadActual==0 && !this.arrancado) {
-            this.arrancado = true;
+    public boolean parar() {
+        if (this.velocidadActual == 0 && this.arrancado) {
+            this.arrancado = false;
             return true;
         }
 
         return false;
     }
 
-    public void acelerar(int vel){
+    public void acelerar(int vel) {
         if (this.arrancado) {
-            if (this.velocidadActual + vel >= velocidadMaxima) { // 120 Km/h no se va a modificar así que hay que crear una constante en la clase.
+            if (this.velocidadActual + vel >= velocidadMaxima) { // 120 Km/h no se va a modificar así que hay que crear
+                                                                 // una constante en la clase.
                 this.velocidadActual = velocidadMaxima;
-            }
-            else {
+            } else {
                 this.velocidadActual += vel; // this.velocidadActual = this.velocidadActual + vel.
-            } 
+            }
         }
-        
+
     }
 
     // TERCERO: CONSTRUCTOR
-    public String toString(){
+    public String toString() {
         return "Matrícula " + this.matricula +
-        " Marca " + this.marca +
-        " Modelo " + this.modelo +
-        " Color " + this.color +
-        " Velocidad Actual " + this.velocidadActual +
-        " Arrancado " + this.arrancado;
+                " Marca " + this.marca +
+                " Modelo " + this.modelo +
+                " Color " + this.color +
+                " Velocidad Actual " + this.velocidadActual +
+                " Arrancado " + this.arrancado;
     }
     // TERCERO: CONSTRUCTOR
 
