@@ -1,4 +1,4 @@
-package PRIMER_TRIMESTRE.tema4.matrices;
+package tema4.matrices;
 public class MatrizLength {
     public static void main(String[] args) throws Exception {
 

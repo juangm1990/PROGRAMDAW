@@ -1,4 +1,4 @@
-package PRIMER_TRIMESTRE.tema4.matrices.pintarmatrices.normal.piramidesNumeros;
+package tema4.matrices.pintarmatrices.normal.piramidesNumeros;
 
 public class Matriz_navidad1 {
     public static void main(String[] args) throws Exception {

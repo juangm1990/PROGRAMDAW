@@ -1,4 +1,4 @@
-package PRIMER_TRIMESTRE.tema4.matrices.pintarmatrices.normal.arboldenavidad;
+package tema4.matrices.pintarmatrices.normal.arboldenavidad;
 
 public class Arbolinvertido {
     public static void main(String[] args) throws Exception {

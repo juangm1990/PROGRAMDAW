@@ -1,4 +1,4 @@
-package PRIMER_TRIMESTRE.tema4.array;
+package tema4.array;
 public class Arraymultiplicar {
     public static void main(String[] args) throws Exception {
 

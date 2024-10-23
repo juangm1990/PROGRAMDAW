@@ -1,4 +1,4 @@
-package PRIMER_TRIMESTRE.tema4.funciones.metodos;
+package tema4.funciones.metodos;
 public class Metodos1 {
     public static void main(String[] args) throws Exception {
 

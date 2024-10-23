@@ -1,4 +1,4 @@
-package PRIMER_TRIMESTRE.tema4.matrices.pintarmatrices.normal.piramides;
+package tema4.matrices.pintarmatrices.normal.piramides;
 
 public class Matriz_piramide3 {
     public static void main(String[] args) throws Exception {

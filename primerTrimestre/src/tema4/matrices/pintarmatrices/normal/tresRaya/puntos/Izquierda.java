@@ -1,4 +1,4 @@
-package PRIMER_TRIMESTRE.tema4.matrices.pintarmatrices.normal.tresRaya.puntos;
+package tema4.matrices.pintarmatrices.normal.tresRaya.puntos;
 
 public class Izquierda {
     public static void main(String[] args) throws Exception {
