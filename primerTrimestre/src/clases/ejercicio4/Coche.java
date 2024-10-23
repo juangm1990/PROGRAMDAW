@@ -1,7 +1,7 @@
 package clases.ejercicio4;
 
 public class Coche {
-
+    
     // PRIMERO
     private String matricula;
     private String marca;
@@ -9,6 +9,8 @@ public class Coche {
     private String color;
     private int velocidadActual;
     private boolean arrancado;
+
+    private final static int velocidadMaxima = 120; // Crear la velocidad de 120 Km/h.
     // PRIMERO
 
     public Coche(String mat, String mar, String mod, String col) {
@@ -20,6 +22,7 @@ public class Coche {
         this.color = col;
         this.velocidadActual = 0;
         this.arrancado = false;
+        // SEGUNDO
 
     }
 
@@ -35,6 +38,17 @@ public class Coche {
 
     }
 
+    public void acelerar(int vel){
+        if (this.arrancado) {
+            if (this.velocidadActual + vel >= velocidadMaxima) { // 120 Km/h no se va a modificar así que hay que crear una constante en la clase.
+                this.velocidadActual = velocidadMaxima;
+            }
+            else {
+                this.velocidadActual += vel; // this.velocidadActual = this.velocidadActual + vel.
+            } 
+        }
+        
+    }
 
     // TERCERO: CONSTRUCTOR
     public String toString(){
@@ -45,5 +59,6 @@ public class Coche {
         "Velocidad Actual" + this.velocidadActual +
         "Arrancado" + this.arrancado;
     }
+    // TERCERO: CONSTRUCTOR
 
 }
