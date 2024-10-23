@@ -2,6 +2,10 @@ package clases.ejercicio4;
 
 public class Coche {
 
+    /*
+     * Plantilla: Clase | Configuración general.
+     */
+
     // PRIMERO
     private String matricula;
     private String marca;

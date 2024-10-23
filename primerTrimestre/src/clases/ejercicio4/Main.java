@@ -1,7 +1,9 @@
 package clases.ejercicio4;
 
-public class App {
-    
+public class Main {
+    /*
+     * Archivo para configurar y darle acción al programa.
+     */
     public static void main(String[] args) throws Exception {
         
         Coche c1 = new Coche("1458BGK", "Audi", "A4", "Blanco");
