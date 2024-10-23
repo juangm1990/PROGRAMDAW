@@ -11,8 +11,12 @@ public class App {
         c1.acelerar(20);
         c1.acelerar(100);
 
+        c2.arrancar();
+        c2.parar();
+
 
         System.out.println(c1);
+        System.out.println(c2);
 
 
 

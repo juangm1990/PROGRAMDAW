@@ -38,6 +38,15 @@ public class Coche {
 
     }
 
+    public boolean parar(){
+        if (this.velocidadActual==0 && !this.arrancado) {
+            this.arrancado = true;
+            return true;
+        }
+
+        return false;
+    }
+
     public void acelerar(int vel){
         if (this.arrancado) {
             if (this.velocidadActual + vel >= velocidadMaxima) { // 120 Km/h no se va a modificar así que hay que crear una constante en la clase.
@@ -52,12 +61,12 @@ public class Coche {
 
     // TERCERO: CONSTRUCTOR
     public String toString(){
-        return "Matrícula" + this.matricula +
-        "Marca" + this.marca +
-        "Modelo" + this.modelo +
-        "Color" + this.color +
-        "Velocidad Actual" + this.velocidadActual +
-        "Arrancado" + this.arrancado;
+        return "Matrícula " + this.matricula +
+        " Marca " + this.marca +
+        " Modelo " + this.modelo +
+        " Color " + this.color +
+        " Velocidad Actual " + this.velocidadActual +
+        " Arrancado " + this.arrancado;
     }
     // TERCERO: CONSTRUCTOR
 
