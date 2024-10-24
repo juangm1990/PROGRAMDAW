@@ -1,7 +1,7 @@
 package clases.ejercicio2;
 
 public class Persona2 {
-
+    
     private int edad;
 
     public Persona2(int e) {

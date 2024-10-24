@@ -1,7 +1,7 @@
 package clases.ejercicio1;
 
 public class Persona {
-
+    
     private String nombre;
     private String fecha;
 
@@ -14,6 +14,4 @@ public class Persona {
     public String toString() {
         return this.nombre + " " + this.fecha;
     }
-
-
 }
