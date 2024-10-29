@@ -1,4 +1,4 @@
-public class Arraymultiplicar {
+public class ArrayNormal {
     public static void main(String[] args) throws Exception {
 
         // array fijo y tabla de multiplicar
@@ -15,6 +15,7 @@ public class Arraymultiplicar {
 
 
             }
+
             System.out.println("-------------------");
         }
     }
