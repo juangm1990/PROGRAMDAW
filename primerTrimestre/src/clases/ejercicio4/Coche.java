@@ -15,7 +15,7 @@ public class Coche {
     private boolean arrancado;
 
     private final static int velocidadMaxima = 120; // Crear la velocidad de 120 Km/h.
-    // PRIMERO
+
 
     public Coche(String mat, String mar, String mod, String col) {
 
@@ -26,13 +26,13 @@ public class Coche {
         this.color = col;
         this.velocidadActual = 0;
         this.arrancado = false;
-        // SEGUNDO
+
 
     }
 
     // CUARTO
     public boolean arrancar() {
-        if (this.velocidadActual == 0 && !this.arrancado) { // !this.arrancado = this.arrancado == false.
+        if (this.velocidadActual == 0 && !this.arrancado) { // !this.arrancado = this.arrancado == false //
             this.arrancado = true;
             return true;
 
@@ -72,6 +72,5 @@ public class Coche {
                 " Velocidad Actual " + this.velocidadActual +
                 " Arrancado " + this.arrancado;
     }
-    // TERCERO: CONSTRUCTOR
 
 }
