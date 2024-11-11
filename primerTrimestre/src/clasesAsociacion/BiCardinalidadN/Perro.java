@@ -1,5 +1,5 @@
 package clasesAsociacion.BiCardinalidadN;
 
-public class AsociacionBidireccional {
+public class Perro {
     
 }
