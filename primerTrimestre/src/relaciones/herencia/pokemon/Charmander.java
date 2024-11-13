@@ -15,7 +15,18 @@ class Charmander extends Pokemon {
     //MÉTODO
     @Override //SOBRESCRITURA
     public void atacar (Pokemon otro){
-        otro.ps = otro.ps - (100 * multiplicadornyo);
+        if(otro instanceof Squirtel){
+            if(!otro.defendiendo){
+                otro.ps=otro.ps-(100*multiplicadornyo);
+            }
+            else{
+                otro.ps=otro.ps-50;
+            }
+        } 
+        else{
+            otro.ps = otro.ps - (100 * multiplicadornyo);
+        }
+  
     }
     
 }
