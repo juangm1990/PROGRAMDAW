@@ -1,12 +1,18 @@
 package relaciones.herencia.pokemon;
 
 public class Bulbasur extends Pokemon {
-    public static void main(String[] args) {
-        super.(nombre, tipo);
+
+    public Bulbasur(String nombre){
+        super(nombre, "planta");
 
     }
 
-    public String toString(){
-        return "Bulbasur: " + super.toString()
-;    }
+
+    //MÉTODO
+    public void curar(){
+        
+        super.ps = super.ps + 50;
+    }
+
+
 }

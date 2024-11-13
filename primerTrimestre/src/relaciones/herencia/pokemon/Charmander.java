@@ -2,17 +2,20 @@ package relaciones.herencia.pokemon;
 
 class Charmander extends Pokemon {
 
-    private int multiplicarDanyo;
+    //ATRIBUTOS
+    private int multiplicadornyo;
 
-    public Charmander (String nombre, String tipo, int multiplicarDanyo){
-        super(nombre, tipo);
-        this.multiplicarDanyo=multiplicarDanyo;
+    //CONSTRUCTOR
+    public Charmander (String nombre){
+        super(nombre, "fuego");
+
+        this.multiplicadornyo = 3;
     }
-
-    public void atacar(Pokemon otro){
-        otro.ps=otro.ps-(100*this.multiplicarDanyo);
-        
+    
+    //MÉTODO
+    @Override //SOBRESCRITURA
+    public void atacar (Pokemon otro){
+        otro.ps = otro.ps - (100 * multiplicadornyo);
     }
-
     
 }
