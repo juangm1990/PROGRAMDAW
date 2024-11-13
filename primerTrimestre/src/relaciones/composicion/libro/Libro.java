@@ -45,12 +45,8 @@ public class Libro {
     }
     
     
-    /*public void agregarPagina(Pagina p){
-        
-        this.paginas.add(p);
-    }*/
 
-    public ArrayList<Pagina> getPaginas(){
+    private ArrayList<Pagina> getPaginas(){
         return this.paginas;
     }
 
@@ -58,7 +54,7 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "Libro [titulo =" + titulo + ", isbn=" + isbn + "]";
+        return "Libro [titulo =" + titulo + ", isbn=" + isbn + "]" + getPaginas();
     }
 
 
