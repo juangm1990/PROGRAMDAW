@@ -12,7 +12,9 @@ public class Arraymultiplicar {
                 System.out.println(numeros [i] + " x " + j + " = " + (numeros [i]* j) );
 
                 
-
+/*
+ * 
+ */
 
             }
             System.out.println("-------------------");
