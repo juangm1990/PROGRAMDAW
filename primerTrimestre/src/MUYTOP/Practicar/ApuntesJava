@@ -1,0 +1,62 @@
+
+Bucle for
+
+
+
+Este tipo de bucle suele utilizarse para desarrollar una acción un número determinado de veces, 
+cuando este ya se conoce de forma previa.
+
+Como podemos ver, la estructura de un bucle for, comprende tres partes:
+
+for (parte1; parte2; parte3){
+sentencias a ejecutar.
+}
+
+parte1 – Normalmente, suele ser utilizada para inicializar la variable que vamos a controlar.
+parte2 – Expresa la condición que debe cumplirse para que el bucle siga repitiéndose.
+parte3 – Incremento que se realiza en la variable.
+
+En el ejemplo que hemos puesto, la variable la hemos inicializado como i, aunque el nombre se puede poner el que se quiera, por ejemplo valor, o numeroAImprimir.
+
+En la segunda parte, hemos puesto una condición, que podríamos leer mientras que i la cumpla, continuaremos repitiendo el bucle.
+
+La tercera parte, i++ realiza un incremento de la variable i en 1. Si hubiésemos querido que aumentase de dos en dos, podríamos haber puesto i = i + 2 por ejemplo.
+
+
+
+Bucle while
+
+
+
+El bucle while podríamos leerlo algo así como mientras se cumpla esta condición haz esto.
+
+int i = 1;
+while (i <= 10){
+sentencias a ejecutar.
+i++;
+}
+
+Para el uso de esta estructura, debemos realizar la inicialización de la variable con anterioridad y al llegar al while, con la lectura indicada, 
+podemos entender que hace la comprobación de la condición antes de nada, si se cumplen los requisitos, se ejecutarán las acciones, si no se cumplen, 
+pasará a la siguiente parte del código sin llegar a ejecutarse ninguna vez.
+
+Importante, que en esta estructura, el aumento de la variable debe realizarse en el interior de la estructura, ya que sino se incluyese, entraríamos 
+en un bucle infinito.
+
+Ten en cuenta, que no siempre debe realizarse un incremento automático de la variable, puede ser una variable que se pida por teclado al usuario, y 
+entonces se repetiría un número indeterminado de veces hasta que el usuario incluya un valor que no cumpla la condición.
+
+
+
+Bucle do-while
+
+
+
+El bucle do-while es muy similar a while, la principal diferencia es que la comprobación de la condición se realiza al final del primer ciclo y por 
+tanto, como mínimo, las instrucciones se realizan al menos una vez. La lectura sería haz esto mientras que se cumpla esta condición.
+
+int i = 0;
+do {
+System.out.println(i);
+i++;
+} while (i <= 10);

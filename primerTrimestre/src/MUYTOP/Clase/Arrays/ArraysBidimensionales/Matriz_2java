@@ -1,0 +1,12 @@
+package Clase.Arrays.ArraysBidimensionales;
+
+public class Matriz_2 {
+    public static void main(String[] args) throws Exception {
+    
+        /* 
+         * 
+         */
+
+        
+    }
+}

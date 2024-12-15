@@ -1,0 +1,179 @@
+
+
+Sentencias condicionales
+
+
+
+Este tipo de sentencias nos permitirán hacer que nuestros programas puedan «tomar decisiones». Según los datos que 
+vayamos recibiendo por parte de nuestros usuarios, lo habitual es que nuestros programas tengan que actuar de un modo u otro.
+
+Por ejemplo, si hacemos un programa que pida por pantalla tu edad, y debe mostrar si eres menor o mayor de edad, debe poder 
+analizar los valores y actuar en consecuencia.
+
+Para ello, lo que haríamos sería una comparación y una estructura condicional «si es…».
+
+Ejemplo:
+
+Edad: 19 años
+¿19 es mayor o igual que 18? Sí. «Es mayor de edad»
+
+Edad: 17 años
+¿17 es mayor o igual que 18? No. «Es menor de edad»
+
+Estas sentencias, condicionales se pueden obtener en Java mediante dos formatos, (if y switch).
+
+
+
+Sentencia if…. else
+
+
+
+La sentencia if puede traducirse literalmente «si…», expresando con ello en su lectura una condición. Durante el programa se 
+presenta de la siguiente forma:
+
+if (parametro1 condición parametro2) {
+quiero que haga esto;
+} else {
+hará esto otro;
+}
+
+Con esta expresión, si la comprobación que hacemos entre paréntesis se cumple, se hace lo que aparece en la primera parte, si 
+fuese falsa, se haría lo que corresponde a else.
+
+
+Sentencia if
+
+
+Aunque habitualmente, este es el formato más habitual de una expresión condicional también podríamos encontrarnos, que la parte 
+del else no existe.
+
+if (parametro1 condición parametro2) {
+quiero que haga esto;
+}
+
+En este caso, lo que haría el programa es comprobar la condición del if, si se cumple, seguiría haciendo lo que aparece entre 
+llaves, pero si no se cumple, pasaría al siguiente punto del programa, omitiendo la instrucción if.
+
+
+
+Sentencia if… else if… else
+
+
+
+En programación, también podemos realizar una expresión que incluya varias condiciones, en este caso, el programa iría leyendo 
+por orden y ejecutaría la primera en la que se cumpla la condición, tras ello saldría de la estructura if y continuaría con el programa.
+
+Pongo un ejemplo con algunos datos para que puedas entenderlo mejor:
+
+if (A > B) {
+A es mayor que B;
+} else if (A > C) {
+A es mayor que C;
+} else if (B > C) {
+B es mayor que C;
+} else {
+C es mayor que A y que B;
+}
+
+Con los siguientes datos, el funcionamiento sería así:
+A= 50; B = 120; C = 500;
+
+Comprobamos si A es mayor que B, al ser falso, pasa a la siguiente instrucción.
+Comprobamos si A es mayor que C, al ser falso, pasa a la siguiente instrucción.
+Comprobamos si B es mayor que C, al ser falso, pasa a la siguiente instrucción.
+Al no haber más casos contemplados, mostraría el mensaje «C es mayor que A y que B»
+Si modificamos y dejamos estos datos, el funcionamiento sería así:
+A= 150; B = 120; C = 500;
+
+Comprobamos si A es mayor que B, al ser correcto, directamente mostraría el mensaje «A es mayor que B», y aunque «C es mayor que 
+A y B», nunca llegaría a realizar esa comprobación, saliendo así de la estructura if.
+
+
+
+Sentencia Switch
+
+
+
+Esta expresión se utiliza para comparar el valor de una variable con unos valores muy concretos. Uno de sus usos más habituales 
+es, por ejemplo, para la creación de un menú.
+
+Para entendernos, el funcionamiento vendría a ser una cosa así:
+
+variable opción
+
+Menú:
+
+Muestra la fecha de hoy
+Muestra la hora actual
+Muestra el nombre de usuario
+Cierra el programa
+Si el usuario elige la opción 1, el programa debería funcionar de forma diferente a si lo hiciese con la opción 2, etc.
+
+En código, la forma de escribir esta estructura, sería la siguiente:
+
+switch (variable) {
+case 1:
+mostraría la fecha de hoy
+break;
+case 2:
+mostraría la hora actual
+break;
+case 3:
+mostraría el nombre del usuario
+break;
+case 4:
+cerraría el programa
+break;
+default:
+haría una acción por defecto, por ejemplo, volver a pedir que introduzcas el valor.
+break;
+}
+
+Como vemos, la estructura se divide en «casos», si el valor de la variable es «1», «2», etc. y según el valor de la variable se 
+ejecutan unas instrucciones. Una vez ejecutadas, observamos que debajo aparece la instrucción break; si esta no se introduce, el 
+flujo del programa continuaría hacia abajo ejecutando el resto de instrucciones, con ella marcamos la salida del conjunto switch.
+
+En caso de que el valor incluido, no corresponda con ninguno de los «casos«, se aplicaría la instrucción «default«.
+
+
+
+Operadores de comparación
+
+
+
+Para poder realizar la comparaciones debemos hacer usos de los operadores de comparación, por lo general son bastante intuitivos y 
+similares a los que utilizamos en cualquier ecuación matemática, a excepción del == (igual) y != (distinto).
+
+==	igual
+!=	distinto
+<	menor que
+>	mayor que
+<=	menor o igual que
+>=	mayor o igual que
+
+
+
+Operadores lógicos
+
+
+
+Estos operadores nos sirven para trabajar con más de una condición a la vez, es decir, por ejemplo, si tenemos el número diez, y 
+nuestro programa comprueba si el número es mayor de 5 y si es par, este y sería el denominado operador lógico.
+
+&&	y
+||	o
+!	no (negación)
+Estos son los tres operadores que podremos utilizar en nuestras expresiones, el resultado de la expresión final será también 
+«verdadero» o «falso», aunque creo que resulta bastante obvio, analicemos sus resultados:
+
+condición1 && condición2
+
+Para que se devuelva el valor «verdadero», ambas condiciones deben ser verdaderas
+
+condición1 || condición2
+
+Para que devuelva el valor «verdadero», valdría con que una de las dos lo sea.
+
+!condición
+
+El operador de negación, devuelve el valor contrario al que sea el resultado habitual de la condición.
