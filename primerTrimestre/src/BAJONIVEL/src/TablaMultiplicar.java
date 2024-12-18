@@ -8,6 +8,6 @@ public class TablaMultiplicar {
                 resultado = numeros[i] * j;
                 System.out.println(numeros[i] + " x " + j + " = " + resultado );
             }
-        }
+        } // ASDASD
     }
 }
