@@ -2,8 +2,9 @@ public class Futbolista extends Persona implements Deportista {
     
     private int dorsal;
     private String demarcacion;
-    // Atributo de la clase (no del Objeto) Futbolista.maxFutbolista();
-    public final static int MaximoFutbolista = 26;
+    public final static int maxFutbolista = 26; // Atributo de la Clase, no del Objeto, no hay que instanciar nada. Futbolista.maxFutbolista();
+
+    // Constructores por Defecto, Parámetros y Copia
 
     public Futbolista() {
         super();
@@ -11,10 +12,10 @@ public class Futbolista extends Persona implements Deportista {
         this.demarcacion = null;
     }
 
-    public Futbolista(int id, String nom, String apell, String fechaNac, double peso, double altura, int dorsal, String demar) {
-        super(id, nom, apell, fechaNac, peso, altura);
-        this.dorsal = dorsal;
-        this.demarcacion = demar;
+    public Futbolista(int i, String n, String ape, String fNac, double p, double a, int dor, String de) {
+        super(i, n, ape, fNac, p, a);
+        this.dorsal = dor;
+        this.demarcacion = de;
     }
 
     public Futbolista(Futbolista copia) {
@@ -22,6 +23,8 @@ public class Futbolista extends Persona implements Deportista {
         this.dorsal = copia.dorsal;
         this.demarcacion = copia.demarcacion;
     }
+
+    // Getters y Setters
 
     public int getDorsal() {
         return this.dorsal;
@@ -39,22 +42,21 @@ public class Futbolista extends Persona implements Deportista {
         this.demarcacion = de;
     }
 
-    
+    // Métodos Personalizados
 
-    // Métodos personalizados que hacen referencia al objeto actual: Futbolista
     @Override
     public void viajar() {
-        System.out.println("El futbolista está viajando" + this);
+        System.out.println("Futbolista viajando" + this);
     }
 
     @Override
     public void entrenar() {
-        System.out.println("El futbolista está entrenando" + this);
+        System.out.println("Futbolista entrenando" + this);
     }
 
     @Override
     public void jugarPartido() {
-        System.out.println("El futbolista está jugando partido" + this);
+        System.out.println("Futbolista jugando partido" + this);
     }
 
     @Override
